@@ -1,0 +1,201 @@
+	[
+	{
+		"name": "Militia",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 30,
+		"cost": 105,
+		"requiredTech": "Rifling",
+		"obsoleteTech": "Replaceable Parts",
+		"upgradesTo": "Great War Recruit",
+		"attackSound": "shot"
+	},
+		{
+		"name": "Great War Recruit",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 44,
+		"cost": 160,
+		"requiredTech": "Replaceable Parts",
+		"upgradesTo": "Conscript",
+		"obsoleteTech": "Plastics",
+		"attackSound": "shot"
+	},
+		{
+		"name": "Conscript",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 58,
+		"cost": 240,
+		"requiredTech": "Plastics",
+		"obsoleteTech": "Mobile Tactics",
+		"attackSound": "shot"
+	},
+		{
+		"name": "Multi Rocket Launcher",
+		"unitType": "Siege",
+		"movement": 2,
+		"strength": 45,
+		"rangedStrength": 60,
+		"range": 3,
+		"cost": 495,
+		"requiredTech": "Rocketry",
+		"promotions": ["Logistics"],
+		"requiredResource": "Iron",
+		"requiredResource": "Aluminum",
+		"uniques": ["Bonus vs City 200%","No defensive terrain bonus",
+		"Limited Visibility","Ranged attacks may be performed over obstacles"]
+	},
+		{
+		"name": "Bandits",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 12,
+		"cost": 70,
+		"requiredTech": "Iron Working",
+		"upgradesTo": "Mercenaries",
+		"hurryCostModifier": 20,
+		"obsoleteTech": "Steel",
+		"attackSound": "metalhit"
+	},
+		{
+		"name": "Mercenaries",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 19,
+		"cost": 100,
+		"requiredTech": "Steel",
+		"upgradesTo": "Militia",
+		"obsoleteTech": "Gunpowder",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Great War Sniper",
+		"unitType": "Ranged",
+		"movement": 1,
+		"strength": 0,
+		"range": 3,
+		"rangedStrength": 10,
+		"cost": 380,
+		"requiredTech": "Replaceable Parts",
+		"upgradesTo": "Sniper",
+		"obsoleteTech": "Plastics",
+		"uniques": ["Bonus vs Melee 200%","No defensive terrain bonus","Bonus vs Ranged 100%","Bonus vs Mounted 200%"]
+		"attackSound": "shot"
+	},
+	{
+		"name": "Sniper",
+		"unitType": "Ranged",
+		"movement": 1,
+		"range": 3,
+		"strength": 0,
+	    "rangedStrength": 30,
+		"cost": 400,
+		"requiredTech": "Plastics",
+		"uniques": ["Bonus vs Melee 500%","No defensive terrain bonus","Bonus vs Ranged 500%"]
+		"attackSound": "shot"
+	},
+	{
+		"name": "Tank Destroyer",
+		"unitType": "Armor",
+		"movement": 4,
+		"strength": 64,
+		"cost": 436,
+		"requiredTech": "Combined Arms",
+		"requiredResource": "Oil",
+		"uniques": ["Bonus vs Armor 200%"]
+	},
+	{
+		"name": "Rocket Launcher",
+		"unitType": "Ranged",
+		"movement": 2,
+		"strength": 20,
+		"range": 2,
+		"rangedStrength": 44,
+		"cost": 375,
+		"requiredTech": "Combustion",
+		"uniques": ["Bonus vs Armor 250%","Bonus vs city 250%"]
+		"attackSound": "shot"
+	},
+	{
+		"name": "trench digger",
+		"unitType": "Civilian",
+		"requiredTech": "Rifling",
+		"movement": 2,
+		"uniques": ["Can construct [trench]"],
+		"cost": 20
+	},
+	{
+		"name": "bunker worker",
+		"unitType": "Civilian",
+		"requiredTech": "Industrilization",
+		"movement": 2,
+		"uniques": ["Can construct [bunker]"],
+		"cost": 450
+	},
+	{
+		"name": "flag bearer",
+		"unitType": "Civilian",
+		"requiredTech": "Iron Working",
+		"movement": 2,
+		"uniques": ["Bonus for units in 2 tile radius 10%"],
+		"cost": 250
+	},
+	{
+		"name": "APC",
+		"unitType": "Melee",
+		"movement": 4,
+		"strength": 95,
+		"cost": 430,
+		"requiredTech": "Mobile Tactics",
+		"requiredResource": "Oil",
+		"uniques": ["Bonus vs Melee 50%","Bonus vs Ranged 50%"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Scout Car",
+		"unitType": "Melee",
+		"movement": 5,
+		"strength": 35,
+		"cost": 180,
+		"requiredTech": "Steam Power",
+
+		"uniques": ["Ignores terrain cost"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "AA Vehicle",
+		"unitType": "Melee",
+		"movement": 4,
+		"interceptRange": 2,
+		"strength": 40,
+		"cost": 450,
+		"requiredTech": "Computers",
+		"requiredResource": "Oil",
+		"uniques": ["[100]% chance to intercept air attacks","Bonus vs air units 150%"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Battering Ram",
+		"unitType": "Siege",
+		"movement": 3,
+		"strength": 14,
+		"cost": 110,
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Chemistry",
+		"upgradesTo": "Cannon",
+		"uniques": ["Bonus vs City 200%", "Must set up to ranged attack","Limited Visibility"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Grenadier",
+		"unitType": "Ranged",
+		"movement": 2,
+		"strength": 20,
+		"range": 2,
+		"rangedStrength": 45,
+		"cost": 380,
+		"requiredTech": "Dynamite",
+		"uniques": ["Bonus vs Melee 250%","Bonus vs Ranged 250%"]
+	},
+	]
